@@ -1,5 +1,7 @@
 import Head from "next/head";
 import React from "react";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
 export default function Home() {
   return (
@@ -7,12 +9,14 @@ export default function Home() {
       <Head>
         <title>Home Test</title>
       </Head>
-      <main>
-        <h1>Main Page Application</h1>
-        <div>
-          <p>This is the test for connect with api</p>
-        </div>
-      </main>
+      <Container maxWidth="lg">
+        <Typography variant="h1" color="initial">
+          Main Page
+        </Typography>
+        <Typography variant="body1" color="initial">
+          This is the site of API WP application
+        </Typography>
+      </Container>
     </>
   );
 }
